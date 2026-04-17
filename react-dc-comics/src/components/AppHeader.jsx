@@ -7,7 +7,7 @@ export default function AppHeader() {
 
             <section className="container-header">
 
-                <img src={AppLogo} alt="" />
+                <img src={AppLogo} className="logo-header" alt="" />
 
                 <nav>
 
