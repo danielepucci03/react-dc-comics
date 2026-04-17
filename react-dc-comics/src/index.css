@@ -30,12 +30,41 @@ a {
 
 
 .image {
+
+    padding: 3rem 5rem;
+    min-width: 100%;
     background-color: rgb(0, 110, 255);
     ;
 
+    a {
+        font-size: 10px;
+        color: white;
+    }
+
+
+    .maindc {
+        width: 30px;
+        height: 50px;
+    }
+
+    .mainm {
+        width: 30px;
+        height: 40px;
+    }
+
+    .mainsl {
+        width: 30px;
+        height: 40px;
+    }
+
+    .mains {
+        width: 30px;
+        height: 40px;
+    }
+
     .mainpv {
-        width: 150px;
-        height: 150px;
+        width: 60px;
+        height: 40px;
     }
 
 }
@@ -77,7 +106,7 @@ a {
 
 .container {
     display: flex;
-    flex-direction: column;
+
 }
 
 .container-footer {
