@@ -17,7 +17,7 @@ export default function AppFooter() {
 
             <section className='footer'>
 
-                <div className="container">
+                <div className="container-footer">
 
                     <div className="row">
 

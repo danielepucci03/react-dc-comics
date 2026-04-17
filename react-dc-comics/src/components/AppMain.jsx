@@ -19,15 +19,15 @@ export default function AppMain() {
                 <div className="row">
                     <section className="image">
                         <img src={MainDC} alt="" />
-                        <p>DIGITAL COMICS</p>
+                        <a href=''>DIGITAL COMICS</a>
                         <img src={MainM} alt="" />
-                        <p>DC MERCHANDISE</p>
+                        <a href=''>DC MERCHANDISE</a>
                         <img src={MainSL} alt="" />
-                        <p>SUBSCRIPTION</p>
+                        <a href=''>SUBSCRIPTION</a>
                         <img src={MainS} alt="" />
-                        <p>COMIC SHOP LOCATOR</p>
+                        <a href=''>COMIC SHOP LOCATOR</a>
                         <img src={MainPV} className='mainpv' alt="" />
-                        <p>DC POWER VISA</p>
+                        <a href=''>DC POWER VISA</a>
                     </section>
                 </div>
             </div>
