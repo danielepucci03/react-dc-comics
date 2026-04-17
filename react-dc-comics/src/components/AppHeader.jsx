@@ -1,6 +1,11 @@
+import AppLogo from '../assets/dc-comics-1/img/dc-logo.png'
+
+
 export default function AppHeader() {
     return (
         <header>
+
+            <img src={AppLogo} alt="" />
 
             <nav>
 

@@ -12,7 +12,7 @@ export default function AppMain() {
         <main>
 
             <section>
-
+                CIAO
             </section>
 
             <section className="image">
