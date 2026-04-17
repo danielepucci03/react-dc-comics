@@ -4,19 +4,58 @@
     box-sizing: border-box;
 }
 
-section {
-    padding: 3rem 3rem;
-    background-color: rgb(0, 110, 255);
+body {
+    font-family: 'Open Sans Variable', sans-serif;
+}
 
+a {
+    text-decoration: none;
+    color: aqua;
+    padding: 1rem;
+    font-size: small;
 }
 
 
-.image {
+
+.text {
+    padding: 3rem 3rem;
     background-color: black;
+}
+
+
+
+.image {
+    background-color: rgb(0, 110, 255);
+    ;
 
     .mainpv {
         width: 150px;
         height: 150px;
     }
 
+}
+
+
+
+.footer-img {
+    max-height: 300px;
+    width: 100%;
+}
+
+.footer {
+
+    padding: 3rem;
+    background-image: url(../src/assets/dc-comics-1/img/footer-bg.jpg);
+
+}
+
+.footer-link {
+    width: 100%;
+    flex: 1;
+    background-color: rgb(74, 73, 73);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
 }

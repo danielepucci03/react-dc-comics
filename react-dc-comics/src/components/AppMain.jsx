@@ -11,17 +11,26 @@ export default function AppMain() {
     return (
         <main>
 
-            <section>
+            <section className='text'>
                 CIAO
             </section>
 
-            <section className="image">
-                <img src={MainDC} alt="" />
-                <img src={MainM} alt="" />
-                <img src={MainSL} alt="" />
-                <img src={MainS} alt="" />
-                <img src={MainPV} className='mainpv' alt="" />
-            </section>
+            <div className="container">
+                <div className="row">
+                    <section className="image">
+                        <img src={MainDC} alt="" />
+                        <p>DIGITAL COMICS</p>
+                        <img src={MainM} alt="" />
+                        <p>DC MERCHANDISE</p>
+                        <img src={MainSL} alt="" />
+                        <p>SUBSCRIPTION</p>
+                        <img src={MainS} alt="" />
+                        <p>COMIC SHOP LOCATOR</p>
+                        <img src={MainPV} className='mainpv' alt="" />
+                        <p>DC POWER VISA</p>
+                    </section>
+                </div>
+            </div>
 
         </main>
     )
