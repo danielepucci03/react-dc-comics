@@ -15,7 +15,7 @@ export default function AppMain() {
                 CIAO
             </section>
 
-            <div className="container">
+            <section className="container">
 
                 <section className="image">
                     <img src={MainDC} className="maindc" alt="" />
@@ -30,7 +30,7 @@ export default function AppMain() {
                     <a href=''>DC POWER VISA</a>
                 </section>
 
-            </div>
+            </section>
 
 
         </main>

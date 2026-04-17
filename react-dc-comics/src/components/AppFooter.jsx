@@ -83,7 +83,9 @@ export default function AppFooter() {
 
                 <section className='footer-link'>
 
-                    <button>SIGN-UP NOW!</button>
+                    <button>
+                        <a href="">SIGN-UP NOW!</a>
+                    </button>
 
                     <section className='second-container-footer'>
 

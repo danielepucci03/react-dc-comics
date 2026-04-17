@@ -12,7 +12,7 @@ export default function AppHeader() {
                 <nav>
 
                     <a href="">CHARACTERS</a>
-                    <a href="">GAMES</a>
+                    <a href="" className='comics'>COMICS</a>
                     <a href="">MOVIES</a>
                     <a href="">TV</a>
                     <a href="">GAMES</a>
