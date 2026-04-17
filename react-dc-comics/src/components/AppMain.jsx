@@ -20,8 +20,9 @@ export default function AppMain() {
                 <img src={MainM} alt="" />
                 <img src={MainSL} alt="" />
                 <img src={MainS} alt="" />
-                <img src={MainPV} alt="" />
+                <img src={MainPV} className='mainpv' alt="" />
             </section>
+
         </main>
     )
 
