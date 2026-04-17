@@ -72,23 +72,27 @@ export default function AppFooter() {
 
                     <button>SIGN-UP NOW!</button>
 
-                    <a href="">FOLLOW US</a>
+                    <section className='second-container'>
 
-                    <a href="">
-                        <img src={FooterFb} alt="" />
-                    </a>
-                    <a href="">
-                        <img src={FooterTw} alt="" />
-                    </a>
-                    <a href="">
-                        <img src={FooterYt} alt="" />
-                    </a>
-                    <a href="">
-                        <img src={FooterPin} alt="" />
-                    </a>
-                    <a href="">
-                        <img src={FooterPer} alt="" />
-                    </a>
+                        <a href="">FOLLOW US</a>
+
+                        <a href="">
+                            <img src={FooterFb} alt="" />
+                        </a>
+                        <a href="">
+                            <img src={FooterTw} alt="" />
+                        </a>
+                        <a href="">
+                            <img src={FooterYt} alt="" />
+                        </a>
+                        <a href="">
+                            <img src={FooterPin} alt="" />
+                        </a>
+                        <a href="">
+                            <img src={FooterPer} alt="" />
+                        </a>
+
+                    </section>
 
                 </section>
 

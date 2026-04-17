@@ -23,6 +23,7 @@ a {
 
 
 .text {
+    color: white;
     padding: 3rem 3rem;
     background-color: black;
 }
@@ -84,9 +85,22 @@ a {
 }
 
 .footer-link {
-    width: 100%;
-    flex: 1;
+    border: 2px solid red;
+    padding: 3rem;
     background-color: rgb(74, 73, 73);
+
+    button {
+        display: flex;
+        justify-content: flex-start;
+        padding: 1rem;
+        color: white;
+        background-color: transparent;
+        border: 2px solid rgb(0, 110, 255);
+    }
+
+    a {
+        color: rgb(0, 110, 255);
+    }
 }
 
 .container-header {
@@ -113,4 +127,9 @@ a {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+}
+
+.second-container {
+    display: flex;
+    justify-content: flex-end;
 }
