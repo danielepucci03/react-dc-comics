@@ -116,20 +116,38 @@ a {
 }
 
 
+.container-footer {
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    gap: 20px;
 
+    a {
+        color: white;
+    }
+
+    .footer-column {
+
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                margin-bottom: 5px;
+            }
+        }
+
+    }
+}
 
 .container {
     display: flex;
 
 }
 
-.container-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-}
-
-.second-container {
+.second-container-footer {
     display: flex;
     justify-content: flex-end;
 }
