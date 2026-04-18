@@ -115,10 +115,7 @@ nav {
 /* FOOTER */
 
 
-.footer-img {
-    max-height: 300px;
-    width: 100%;
-}
+
 
 .footer {
 
@@ -133,6 +130,7 @@ nav {
     border: 2px solid red;
     padding: 3rem;
     background-color: rgb(74, 73, 73);
+    background-position: bottom;
 
     button {
         padding: 1rem 2rem;
@@ -170,7 +168,9 @@ nav {
     }
 
     .footer-column {
-
+        flex-wrap: wrap;
+        width: calc((100% / 12) * 4);
+        flex-basis: auto;
 
         ul {
             list-style: none;
@@ -181,6 +181,12 @@ nav {
             }
         }
 
+    }
+
+    .logodc {
+        display: flex;
+        width: 400px;
+        height: 400px;
     }
 
 }

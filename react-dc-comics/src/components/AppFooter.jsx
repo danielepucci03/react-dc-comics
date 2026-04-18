@@ -3,7 +3,7 @@ import FooterPer from '../assets/dc-comics-1/img/footer-periscope.png'
 import FooterPin from '../assets/dc-comics-1/img/footer-pinterest.png'
 import FooterTw from '../assets/dc-comics-1/img/footer-twitter.png'
 import FooterYt from '../assets/dc-comics-1/img/footer-youtube.png'
-
+import LogoDC from '../assets/dc-comics-1/img/dc-logo-bg.png'
 
 
 export default function AppFooter() {
@@ -78,6 +78,8 @@ export default function AppFooter() {
                             <li><a href="">DC Power Visa</a></li>
                         </ul>
 
+
+                        <img src={LogoDC} className='logodc' alt="" />
                     </div>
                 </section>
 
