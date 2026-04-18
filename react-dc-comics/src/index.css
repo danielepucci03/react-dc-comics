@@ -60,8 +60,9 @@ nav {
 
     .image {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+        text-align: center;
         padding: 3rem 5rem;
         background-color: rgb(0, 110, 255);
 
@@ -69,6 +70,7 @@ nav {
         a {
             font-size: 10px;
             color: white;
+            gap: 10px;
         }
 
 
@@ -168,9 +170,7 @@ nav {
     }
 
     .footer-column {
-        flex-wrap: wrap;
-        width: calc((100% / 12) * 4);
-        flex-basis: auto;
+
 
         ul {
             list-style: none;

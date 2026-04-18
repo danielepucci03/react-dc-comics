@@ -18,16 +18,16 @@ export default function AppMain() {
             <section className="container">
 
                 <section className="image">
-                    <img src={MainDC} className="maindc" alt="" />
-                    <a href=''>DIGITAL COMICS</a>
-                    <img src={MainM} className='mainm' alt="" />
-                    <a href=''>DC MERCHANDISE</a>
-                    <img src={MainSL} className='mainsl' alt="" />
-                    <a href=''>SUBSCRIPTION</a>
-                    <img src={MainS} className='mains' alt="" />
-                    <a href=''>COMIC SHOP LOCATOR</a>
-                    <img src={MainPV} className='mainpv' alt="" />
-                    <a href=''>DC POWER VISA</a>
+
+                    <a href=''> <img src={MainDC} className="maindc" alt="" /> DIGITAL COMICS</a>
+
+                    <a href=''><img src={MainM} className='mainm' alt="" />DC MERCHANDISE</a>
+
+                    <a href=''><img src={MainSL} className='mainsl' alt="" />SUBSCRIPTION</a>
+
+                    <a href=''><img src={MainS} className='mains' alt="" />COMIC SHOP LOCATOR</a>
+
+                    <a href=''><img src={MainPV} className='mainpv' alt="" />DC POWER VISA</a>
                 </section>
 
             </section>
