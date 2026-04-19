@@ -11,6 +11,9 @@ export default function AppMain() {
     return (
         <main>
 
+            <section className="image-bg">
+            </section>
+
             <section className='text'>
                 CIAO
             </section>
