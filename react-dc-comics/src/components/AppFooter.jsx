@@ -1,3 +1,4 @@
+import 'bootstrap'
 import FooterFb from '../assets/dc-comics-1/img/footer-facebook.png'
 import FooterPer from '../assets/dc-comics-1/img/footer-periscope.png'
 import FooterPin from '../assets/dc-comics-1/img/footer-pinterest.png'
@@ -78,9 +79,10 @@ export default function AppFooter() {
                             <li><a href="">DC Power Visa</a></li>
                         </ul>
 
-
-                        <img src={LogoDC} className='logodc' alt="" />
                     </div>
+
+                    <img src={LogoDC} className='logodc' alt="" />
+
                 </section>
 
                 <section className='footer-link'>
