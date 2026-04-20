@@ -3,64 +3,64 @@ import AppLogo from '../assets/dc-comics-1/img/dc-logo.png'
 
 export default function AppHeader() {
 
-    const CHARACTERS = [
+    const menu = [
         {
             id: 1,
-            text: CHARACTERS,
+            text: 'CHARACTERS',
             path: '/characters'
 
         },
         {
             id: 2,
-            text: COMICS,
+            text: 'COMICS',
             path: '/comics'
 
         },
         {
             id: 3,
-            text: MOVIES,
+            text: 'MOVIES',
             path: '/movies'
 
         },
         {
             id: 4,
-            text: TV,
+            text: 'TV',
             path: '/tv'
 
         },
         {
             id: 5,
-            text: GAMES,
+            text: 'GAMES',
             path: '/games'
 
         },
         {
             id: 6,
-            text: COLLECTIBLES,
+            text: 'COLLECTIBLES',
             path: '/collectibles'
 
         },
         {
             id: 7,
-            text: VIDEOS,
+            text: 'VIDEOS',
             path: '/videos'
 
         },
         {
             id: 8,
-            text: FANS,
+            text: 'FANS',
             path: '/fans'
 
         },
         {
             id: 9,
-            text: NEWS,
+            text: 'NEWS',
             path: '/news'
 
         },
         {
             id: 10,
-            text: SHOP,
+            text: 'SHOP',
             path: '/shop'
 
         }
@@ -75,7 +75,7 @@ export default function AppHeader() {
 
                 <nav>
 
-                    {CHARACTERS.map((item) => (
+                    {menu.map((item) => (
                         <a href={item.path} key={item.id}>{item.text}</a>
                     ))
                     }

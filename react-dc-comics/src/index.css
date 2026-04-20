@@ -143,14 +143,13 @@ nav {
 
 }
 
-/* GRIGLIA */
 .comics-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
 }
 
-/* CARD */
+
 .comic-card img {
     width: 100%;
     height: 180px;
@@ -163,7 +162,7 @@ nav {
     text-transform: uppercase;
 }
 
-/* BOTTONE */
+
 .load-more {
     display: flex;
     margin: 40px auto 0;
@@ -228,6 +227,7 @@ nav {
     justify-content: flex-start;
     margin: 0 auto;
     gap: 20px;
+    overflow: hidden;
 
     a {
         color: white;
@@ -250,8 +250,8 @@ nav {
     .logodc {
         position: absolute;
         right: 50px;
-        bottom: 1px;
-        width: 400px;
+        bottom: -50px;
+        max-width: 500px;
     }
 
 }
