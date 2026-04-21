@@ -9,6 +9,234 @@ import LogoDC from '../assets/dc-comics-1/img/dc-logo-bg.png'
 
 export default function AppFooter() {
 
+    const footerBottom = [
+        {
+            id: 1,
+            text: 'SIGN-UP NOW!',
+            path: '/sign-up'
+
+        }
+
+    ]
+
+    const footerBottomLink = [
+        {
+            id: 1,
+            text: 'FOLLOW US',
+            path: '/follow'
+
+        },
+        {
+            id: 2,
+            img: '../assets/dc-comics-1/img/footer-facebook.png',
+            path: '/facebook'
+
+        },
+        {
+            id: 3,
+            img: '../assets/dc-comics-1/img/footer-twitter.png',
+            path: '/twitter'
+
+        },
+        {
+            id: 4,
+            img: '../assets/dc-comics-1/img/footer-youtube.png',
+            path: '/youtube'
+
+        },
+        {
+            id: 5,
+            img: '../assets/dc-comics-1/img/footer-pinterest.png',
+            path: '/pinterest'
+
+        },
+        {
+            id: 6,
+            img: '../assets/dc-comics-1/img/footer-periscope.png',
+            path: '/periscope'
+
+        }
+    ]
+
+    const footerDcComics = [
+        {
+            id: 1,
+            text: 'Characters',
+            path: '/characters'
+
+        },
+        {
+            id: 2,
+            text: 'Comics',
+            path: '/comics'
+
+        },
+        {
+            id: 3,
+            text: 'Movies',
+            path: '/movies'
+
+        },
+        {
+            id: 4,
+            text: 'Tv',
+            path: '/tv'
+
+        },
+        {
+            id: 5,
+            text: 'Games',
+            path: '/games'
+
+        },
+        {
+            id: 6,
+            text: 'Collectibles',
+            path: '/collectibles'
+
+        },
+        {
+            id: 7,
+            text: 'Videos',
+            path: '/videos'
+
+        },
+        {
+            id: 8,
+            text: 'Fans',
+            path: '/fans'
+
+        },
+        {
+            id: 9,
+            text: 'News',
+            path: '/news'
+
+        },
+        {
+            id: 10,
+            text: 'Shop',
+            path: '/shop'
+
+        }
+    ]
+
+    const footerShop = [
+        {
+            id: 1,
+            text: 'Shop DC',
+            path: '/shop-dc'
+
+        },
+        {
+            id: 2,
+            text: 'Shop DC Collectibles',
+            path: '/shop-col'
+
+        }
+    ]
+
+    const footerDc = [
+        {
+            id: 1,
+            text: 'Terms of use',
+            path: '/terms'
+
+        },
+        {
+            id: 2,
+            text: 'Privacy policy (NEW)',
+            path: '/privacy-pol'
+
+        },
+        {
+            id: 3,
+            text: 'Ad Choices',
+            path: '/ad-choices'
+
+        },
+        {
+            id: 4,
+            text: 'Advertising',
+            path: '/ad'
+
+        },
+        {
+            id: 5,
+            text: 'Jobs',
+            path: '/jobs'
+
+        },
+        {
+            id: 6,
+            text: 'Subscriptions',
+            path: '/sub'
+
+        },
+        {
+            id: 7,
+            text: 'Talent Workshops',
+            path: '/talent-work'
+
+        },
+        {
+            id: 8,
+            text: 'CPSC Certificates',
+            path: '/cpsc'
+
+        },
+        {
+            id: 9,
+            text: 'Ratings',
+            path: '/ratings'
+
+        },
+        {
+            id: 10,
+            text: 'Shop Help',
+            path: '/shop-help'
+
+        },
+        {
+            id: 11,
+            text: 'Contact Us',
+            path: '/contact-us'
+
+        }
+    ]
+
+    const footerSites = [
+        {
+            id: 1,
+            text: 'DC',
+            path: '/dc'
+
+        },
+        {
+            id: 2,
+            text: 'MAD Magazine',
+            path: '/mad'
+
+        },
+        {
+            id: 3,
+            text: 'DC Kids',
+            path: '/dc-kids'
+
+        },
+        {
+            id: 4,
+            text: 'DC Universe',
+            path: '/dc-universe'
+
+        },
+        {
+            id: 5,
+            text: 'DC Power Visa',
+            path: '/dc-power-visa'
+        }
+    ]
+
     return (
         <footer>
 
@@ -24,13 +252,15 @@ export default function AppFooter() {
                                 DC COMICS
                             </h3>
                             <ul>
-                                <li><a href="">Characters</a></li>
-                                <li><a href="">Comics</a></li>
-                                <li><a href="">Movies</a></li>
-                                <li><a href="">TV</a></li>
-                                <li><a href="">Games</a></li>
-                                <li><a href="">Videos</a></li>
-                                <li><a href="">News</a></li>
+
+                                {footerDcComics.map((item) => (
+                                    <li key={item.id}>
+                                        <a href={item.path}>{item.text}</a>
+                                    </li>
+
+                                ))
+                                }
+
                             </ul>
 
                         </div>
@@ -41,8 +271,13 @@ export default function AppFooter() {
                                 SHOP
                             </h3>
                             <ul>
-                                <li><a href="">Shop DC</a></li>
-                                <li><a href="">Shop DC Collectibles</a></li>
+                                {footerShop.map((item) => (
+                                    <li key={item.id}>
+                                        <a href={item.path}>{item.text}</a>
+                                    </li>
+                                ))
+                                }
+
                             </ul>
 
                         </div>
@@ -55,17 +290,13 @@ export default function AppFooter() {
                             DC
                         </h3>
                         <ul>
-                            <li><a href=''>Terms Of Use </a></li>
-                            <li><a href="">Privacy policy (New)</a></li>
-                            <li><a href="">Ad Choices</a></li>
-                            <li><a href="">Advertising</a></li>
-                            <li><a href="">Jobs</a></li>
-                            <li><a href="">Subscriptions</a></li>
-                            <li><a href="">Talent Workshops</a></li>
-                            <li><a href="">CPSC Certificates</a></li>
-                            <li><a href="">Ratings</a></li>
-                            <li><a href="">Shop Help</a></li>
-                            <li><a href="">Contact Us</a></li>
+                            {footerDc.map((item) => (
+                                <li key={item.id}>
+                                    <a href={item.path}>{item.text}</a>
+                                </li>
+                            ))
+                            }
+
                         </ul>
 
                     </div>
@@ -76,11 +307,13 @@ export default function AppFooter() {
                             SITES
                         </h3>
                         <ul>
-                            <li><a href="">DC</a></li>
-                            <li><a href="">MAD Magazine</a></li>
-                            <li><a href="">DC Kids</a></li>
-                            <li><a href="">DC Universe</a></li>
-                            <li><a href="">DC Power Visa</a></li>
+                            {footerSites.map((item) => (
+                                <li key={item.id}>
+                                    <a href={item.path}>{item.text}</a>
+                                </li>
+                            ))
+                            }
+
                         </ul>
 
                     </div>
@@ -92,28 +325,22 @@ export default function AppFooter() {
                 <section className='footer-link'>
 
                     <button>
-                        <a href="">SIGN-UP NOW!</a>
+
+                        {footerBottom.map((item) => (
+                            <a href={item.path} key={item.id}>{item.text}</a>
+                        ))
+                        }
+
                     </button>
 
                     <section className='second-container-footer'>
 
-                        <a href="">FOLLOW US</a>
-
-                        <a href="">
-                            <img src={FooterFb} alt="" />
-                        </a>
-                        <a href="">
-                            <img src={FooterTw} alt="" />
-                        </a>
-                        <a href="">
-                            <img src={FooterYt} alt="" />
-                        </a>
-                        <a href="">
-                            <img src={FooterPin} alt="" />
-                        </a>
-                        <a href="">
-                            <img src={FooterPer} alt="" />
-                        </a>
+                        {footerBottomLink.map((item) => (
+                            <a href={item.path} key={item.id}>
+                                <img src={item.img} />
+                            </a>
+                        ))
+                        }
 
                     </section>
 

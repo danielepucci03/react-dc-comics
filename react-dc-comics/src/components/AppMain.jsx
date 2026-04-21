@@ -68,7 +68,7 @@ export default function AppMain() {
             id: 5,
             title: "Batman #56",
             description: "The Dark Knight's looking to drop both the hammer and sickle on the KGBeast. The Russian super-assassin has gone too far, and Batman will stop at nothing to hunt him down. But is the Dark Knight willing to step into the darkness himself to find justice?",
-            thumb: "https://imgs.search.brave.com/3vP5d3cOVOuC0f6Uhm7CkV_qFk5hGj5rE4jK5I6n7dI/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9jZG4y/LnBlbmd1aW4uY29t/LmF1L2NvdmVycy9v/cmlnaW5hbC83OTYx/OTQzMTM5OTk4Lmpw/Zw",
+            thumb: "https://imgur.com/ES8Sywv.jpg",
             price: "$3.99",
             series: "Batman",
             sale_date: "2018-10-03",
@@ -128,7 +128,7 @@ export default function AppMain() {
             id: 10,
             title: "Batman: Three Jokers #1",
             description: "Thirty years after Batman: The Killing Joke changed comics forever, Three Jokers reexamines the myth of who, or what, The Joker is and what at the heart of his eternal battle with Batman. New York Times bestselling writer Geoff Johns and Jason Fabok reunite to tell the ultimate story of Batman and The Joker!",
-
+            thumb: "https://i.redd.it/3y70m13fqjp51.jpg",
             price: "$6.99",
             series: "Batman: Three Jokers",
             sale_date: "2020-08-25",
