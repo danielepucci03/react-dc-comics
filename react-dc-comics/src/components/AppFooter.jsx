@@ -19,40 +19,44 @@ export default function AppFooter() {
 
     ]
 
-    const footerBottomLink = [
+    const footerFb = [
         {
             id: 1,
             text: 'FOLLOW US',
             path: '/follow'
 
-        },
+        }
+    ]
+
+    const footerBottomLink = [
+
         {
-            id: 2,
-            img: '../assets/dc-comics-1/img/footer-facebook.png',
+            id: 1,
+            img: FooterFb,
             path: '/facebook'
 
         },
         {
-            id: 3,
-            img: '../assets/dc-comics-1/img/footer-twitter.png',
+            id: 2,
+            img: FooterTw,
             path: '/twitter'
 
         },
         {
-            id: 4,
-            img: '../assets/dc-comics-1/img/footer-youtube.png',
+            id: 3,
+            img: FooterYt,
             path: '/youtube'
 
         },
         {
-            id: 5,
-            img: '../assets/dc-comics-1/img/footer-pinterest.png',
+            id: 4,
+            img: FooterPin,
             path: '/pinterest'
 
         },
         {
-            id: 6,
-            img: '../assets/dc-comics-1/img/footer-periscope.png',
+            id: 5,
+            img: FooterPer,
             path: '/periscope'
 
         }
@@ -334,6 +338,10 @@ export default function AppFooter() {
                     </button>
 
                     <section className='second-container-footer'>
+
+                        {footerFb.map((item) => (
+                            <a href={item.path} key={item.id}>{item.text}</a>
+                        ))}
 
                         {footerBottomLink.map((item) => (
                             <a href={item.path} key={item.id}>

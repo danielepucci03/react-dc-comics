@@ -162,6 +162,58 @@ export default function AppMain() {
         },
     ];
 
+    const mainLinkBlue = [
+
+        {
+            id: 1,
+            text: 'DIGITAL COMICS',
+            img: MainDC,
+            className: 'maindc',
+            path: '/maindc'
+
+        },
+        {
+            id: 2,
+            text: 'DC MERCHANDISE',
+            img: MainM,
+            className: 'mainm',
+            path: '/mainm'
+
+        },
+        {
+            id: 3,
+            text: 'SUBSCRIPTION',
+            img: MainS,
+            className: 'mains',
+            path: '/mains'
+
+        },
+        {
+            id: 4,
+            text: 'COMIC SHOP LOCATOR',
+            img: MainSL,
+            className: 'mainsl',
+            path: '/mainsl'
+
+        },
+        {
+            id: 5,
+            text: 'DC POWER VISA',
+            img: MainPV,
+            className: 'mainpv',
+            path: '/mainpv'
+
+        }
+    ]
+
+    const loadMore = [
+        {
+            id: 1,
+            text: 'LOAD MORE',
+            path: '/load-more'
+        }
+    ]
+
 
     return (
         <main>
@@ -176,15 +228,22 @@ export default function AppMain() {
                     <h2 className="section-title">CURRENT SERIES</h2>
 
                     <div className="comics-grid">
-                        {comics.map((comic, index) => (
-                            <div className="comic-card" key={index}>
+                        {comics.map((comic) => (
+                            <a href='' className="comic-card" key={comic.id}>
                                 <img src={comic.thumb} alt={comic.series} />
                                 <h4>{comic.series}</h4>
-                            </div>
-                        ))}
+                            </a>
+                        ))
+                        }
                     </div>
 
-                    <button className="load-more"><a href="">LOAD MORE</a></button>
+                    {loadMore.map((item) => (
+                        <a key={item.id} href={item.path} className="btn">
+                            {item.text}
+                        </a>
+                    ))
+                    }
+
 
                 </section>
 
@@ -193,16 +252,14 @@ export default function AppMain() {
             <section className="container">
 
                 <section className="image">
+                    {mainLinkBlue.map((item) => (
+                        <a href={item.path} key={item.id}>
+                            <img src={item.img} className={item.className} />
+                            {item.text}
+                        </a>
+                    ))
+                    }
 
-                    <a href=''> <img src={MainDC} className="maindc" alt="" /> DIGITAL COMICS</a>
-
-                    <a href=''><img src={MainM} className='mainm' alt="" />DC MERCHANDISE</a>
-
-                    <a href=''><img src={MainSL} className='mainsl' alt="" />SUBSCRIPTION</a>
-
-                    <a href=''><img src={MainS} className='mains' alt="" />COMIC SHOP LOCATOR</a>
-
-                    <a href=''><img src={MainPV} className='mainpv' alt="" />DC POWER VISA</a>
                 </section>
 
             </section>
